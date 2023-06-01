@@ -5,6 +5,9 @@ import Jsx2 from './components/2-jsx/02-jsx';
 import Jsx3 from './components/2-jsx/03-jsx';
 import Jsx4 from './components/2-jsx/04-jsx';
 import InlineStyling from './components/03-styles/01-inline-styling';
+import InternalStyling from './components/03-styles/02-internal-styling';
+import ExternalStyling from './components/03-styles/03-external-styling';
+import ExternalModuleStyling from './components/03-styles/04-external-module-styling';
 
 //import etmeyi unutmu bu klasor tum companentleri uzerinde bir html sayfasi gibi
 export default function App() {
@@ -23,6 +26,11 @@ export default function App() {
             <br/>
             <InlineStyling/>
             <br/>
+            <InternalStyling/>
+            <br/>
+            <ExternalStyling/>
+            <br/>
+            <ExternalModuleStyling/>
         </>
     )
 };
