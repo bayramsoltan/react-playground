@@ -31,6 +31,8 @@ export default function App() {
             <ExternalStyling/>
             <br/>
             <ExternalModuleStyling/>
+            <br/>
+            <DijitalSaatUygulamasi1/>
         </>
     )
 };
