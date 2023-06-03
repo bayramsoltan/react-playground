@@ -10,6 +10,8 @@ import ExternalStyling from './components/03-styles/03-external-styling';
 import ExternalModuleStyling from './components/03-styles/04-external-module-styling';
 import SassScss from './components/03-styles/05-sass-scss';
 import Digitaltime1 from './components/04-dijital-saat1/digitaltime';
+import Greetings from './components/05-props/01-greetings';
+
 
 //import etmeyi unutmu bu klasor tum companentleri uzerinde bir html sayfasi gibi
 export default function App() {
@@ -37,6 +39,10 @@ export default function App() {
             <SassScss/>
             <br/>
             <Digitaltime1/>
+
+            <br/>
+            <Greetings/>
+            <br/>
         </>
     )
 };
