@@ -8,7 +8,7 @@ import InlineStyling from './components/03-styles/01-inline-styling';
 import InternalStyling from './components/03-styles/02-internal-styling';
 import ExternalStyling from './components/03-styles/03-external-styling';
 import ExternalModuleStyling from './components/03-styles/04-external-module-styling';
-
+import SassScss from './components/03-styles/05-sass-scss';
 //import etmeyi unutmu bu klasor tum companentleri uzerinde bir html sayfasi gibi
 export default function App() {
     return (
@@ -32,7 +32,8 @@ export default function App() {
             <br/>
             <ExternalModuleStyling/>
             <br/>
-            <DijitalSaatUygulamasi1/>
+            <SassScss/>
+            <br/>
         </>
     )
 };

@@ -1,0 +1,29 @@
+$clr-title:green;
+$clr-secondary:blue;
+.sass-scss{
+    h2{
+        color:$clr-title
+    }
+    #heading{
+        font-style:italic;
+    }
+    .list{
+        text-align: center;
+        list-style-type: none;
+        text-transform: uppercase;
+       //display-flex short cut df
+
+    }
+    li{
+        color: $clr-title;
+    }
+    .article1{
+        color: $clr-secondary;
+    }
+    .article2{
+        color: $clr-title;
+    }
+    .article3{
+        color: $clr-secondary;
+    }
+}
