@@ -13,6 +13,7 @@ import Digitaltime1 from './components/04-dijital-saat1/digitaltime';
 import Greetings from './components/05-props/01-greetings';
 import Products from './components/05-props/05-products';
 import Digitaltime2 from './components/06-dijital-saat2/digitaltime2';
+import Image from './components/07-images/01-image';
 
 //import etmeyi unutmu bu klasor tum companentleri uzerinde bir html sayfasi gibi
 export default function App() {
@@ -51,6 +52,8 @@ export default function App() {
             <br />
 
             <Digitaltime2 textColor = "white" bgColor = "cornflowerblue"/>
+            <br />
+            <Image/>
         </>
     )
 };
