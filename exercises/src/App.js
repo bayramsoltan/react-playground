@@ -8,6 +8,8 @@ import JSX6 from "./components/3-JSX/JSX6";
 import Style1 from "./components/4-styles/style1"
 import Style2 from "./components/4-styles/style2";
 import Style3 from "./components/4-styles/style3";
+import Style4 from "./components/4-styles/style4";
+import Clock1 from "./components/5-clock1/Clock1";
 const App = () => {
   //compononets names should start with capital letter
   return (
@@ -21,8 +23,10 @@ const App = () => {
             <JSX6/>
             <Style1/>
             <Style2/>
-            */}
             <Style3/>
+            <Style4/>
+            */}
+            <Clock1/>
         
     </div>
   );
