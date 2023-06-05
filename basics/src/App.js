@@ -58,7 +58,7 @@ export default function App() {
             <Image/>
             <br />
             <ImageGallery/> */}
-    <ProfileCard/>
+    <ProfileCard name="Michael Bayram" location="Chicago,Illinois" />
             
         </>
     )
