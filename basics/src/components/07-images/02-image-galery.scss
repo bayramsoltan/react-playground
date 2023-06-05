@@ -1,0 +1,13 @@
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    > div{
+        img{
+            width: 300px;
+            height: 100%;
+        }
+    }
+}

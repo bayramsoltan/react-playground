@@ -1,5 +1,5 @@
 import React from 'react';
-import Apples, { Bananas1, Orange } from './components/1-my-house';
+/* import Apples, { Bananas1, Orange } from './components/1-my-house';
 import Jsx1 from './components/2-jsx/01-jsx';
 import Jsx2 from './components/2-jsx/02-jsx';
 import Jsx3 from './components/2-jsx/03-jsx';
@@ -13,13 +13,15 @@ import Digitaltime1 from './components/04-dijital-saat1/digitaltime';
 import Greetings from './components/05-props/01-greetings';
 import Products from './components/05-props/05-products';
 import Digitaltime2 from './components/06-dijital-saat2/digitaltime2';
-import Image from './components/07-images/01-image';
+import Image from './components/07-images/01-image'; */
+// import ImageGallery from './components/07-images/02-image-gallery';
+import ProfileCard from './components/08-card-profile/ProfileCard';
 
 //import etmeyi unutmu bu klasor tum companentleri uzerinde bir html sayfasi gibi
 export default function App() {
     return (
         <>
-            <Apples />
+            {/* <Apples />
             <Bananas1 />
             <Orange />
             <Jsx1> </Jsx1>
@@ -54,6 +56,10 @@ export default function App() {
             <Digitaltime2 textColor = "white" bgColor = "cornflowerblue"/>
             <br />
             <Image/>
+            <br />
+            <ImageGallery/> */}
+    <ProfileCard/>
+            
         </>
     )
 };
