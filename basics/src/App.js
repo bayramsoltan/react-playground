@@ -19,6 +19,7 @@ import Image from './components/07-images/01-image'; */
 // import ClassicsBootstrap from './components/09-bootstrap/01-Classic';
 import ModernBootstrap from './components/09-bootstrap/02-Modern';
 import "./assets/scss/style.scss";
+import ReactIcons from './components/10-icons/01-ReactIcons';
 
 const profileCardData = {
     name: "Emir",
@@ -72,9 +73,9 @@ export default function App() {
             <br />
             <ImageGallery/>  <ProfileCard name="Michael Bayram" location="Chicago,Illinois" />
             <ProfileCard {...profileCardData}/>
-            <ClassicsBootstrap/>*/}
-
-            <ModernBootstrap/>
+            <ClassicsBootstrap/><ModernBootstrap/>*/}
+            <ReactIcons/>
+            
    
 
             
