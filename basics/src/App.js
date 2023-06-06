@@ -15,8 +15,21 @@ import Products from './components/05-props/05-products';
 import Digitaltime2 from './components/06-dijital-saat2/digitaltime2';
 import Image from './components/07-images/01-image'; */
 // import ImageGallery from './components/07-images/02-image-gallery';
-import ProfileCard from './components/08-card-profile/ProfileCard';
+// import ProfileCard from './components/08-card-profile/ProfileCard';
+// import ClassicsBootstrap from './components/09-bootstrap/01-Classic';
+import ModernBootstrap from './components/09-bootstrap/02-Modern';
+import "./assets/scss/style.scss";
 
+const profileCardData = {
+    name: "Emir",
+    location: "New York",
+    image: "person4.jpg",
+    statistics: [
+        { title: "Likes", stat: 145 },
+        { title: "Photos", stat: 7 },
+        { title: "Following", stat: 329 },
+    ]
+};
 //import etmeyi unutmu bu klasor tum companentleri uzerinde bir html sayfasi gibi
 export default function App() {
     return (
@@ -57,9 +70,15 @@ export default function App() {
             <br />
             <Image/>
             <br />
-            <ImageGallery/> */}
-    <ProfileCard name="Michael Bayram" location="Chicago,Illinois" />
+            <ImageGallery/>  <ProfileCard name="Michael Bayram" location="Chicago,Illinois" />
+            <ProfileCard {...profileCardData}/>
+            <ClassicsBootstrap/>*/}
+
+            <ModernBootstrap/>
+   
+
             
         </>
+
     )
 };
