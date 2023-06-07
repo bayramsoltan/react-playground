@@ -1,8 +1,11 @@
 import React from 'react'
+import Kisi from './c8/Kisi'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Kisi/>
+    </div>
   )
 }
 
