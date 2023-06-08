@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700;800&display=swap');
+
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+.cards {
+    gap: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.236);
+    height: auto;
+
+
+    .card-title{
+        font-size: 1.5rem;
+        font-weight: 400;
+
+    }
+
+
+    
+}.buttons{
+        background-color: rgb(7, 23, 7) !important;
+        border-radius: 30px !important;
+        -webkit-border-radius: 30px !important;
+        -moz-border-radius: 30px !important;
+        -ms-border-radius: 30px !important;
+        -o-border-radius: 30px !important;
+        width: 150px;
+        font-weight: 400;
+        font-size: 1.2rem;
+}
+
+
+.cards{
+    border-radius: 0 0 50px 50px !important;
+    -webkit-border-radius: 0 0 50px 50px !important;
+    -moz-border-radius: 0 0 50px 50px !important;
+    -ms-border-radius: 0 0 50px 50px !important;
+    -o-border-radius: 0 0 50px 50px !important;
+}

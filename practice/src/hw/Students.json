@@ -1,0 +1,25 @@
+[
+  {
+    "isim": "AFA H JSY D 3S",
+    "yas": "Adidas",
+    "kurs": "₺1.879",
+    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b1bf7415379d446c88f5af7200c879f3_9366/AFA_H_JSY_D_3S_Beyaz_IB3597_21_model.jpg"
+  },
+  {
+    "isim": "Nijerya 2022/23 İç Saha",
+    "yas": "Nike",
+    "kurs": "₺2.299,90",
+    "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0844de55-ebe5-477f-8fd5-7da2fbde777e/nijerya-2022-23-stadyum-i%CC%87%C3%A7-saha-dri-fit-futbol-formas%C4%B1-TFRl3T.png"
+  },
+  {
+    "isim": "Brezilya 2023 İç Saha",
+    "yas": "Nike",
+    "kurs": "₺2.299,90",
+    "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2be60103-10a0-4fba-90e2-874e3468be4c/brezilya-2023-stadyum-i%CC%87%C3%A7-saha-dri-fit-futbol-formas%C4%B1-N8x48P.png"
+  },
+  {
+    "isim": "Yeni Zelanda 2023 İç Saha",
+    "yas": "Nike",
+    "kurs": "₺2.299,90",
+    "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/50fdcfb1-1177-46da-be3f-b26de8cba0c4/yeni-zelanda-2023-stadyum-i%CC%87%C3%A7-saha-dri-fit-futbol-formas%C4%B1-rLFZDS.png"
+  }]
