@@ -1,17 +1,21 @@
-import React from 'react'
-import { Alert, Button, Container } from 'react-bootstrap'
+import React from 'react';
+import { Button, Container } from 'react-bootstrap';
 
 const Events = () => {
-
-    const parameterless=()=>{
-        alert("Parameterless touched")
-    }
-  return (
-    <Container className='d-flex gap-2'>
-        <Button variant='dark' onClick={parameterless}>Parameterless</Button>
-        <Button variant='warning'>WithParameter</Button>
-    </Container>
-  )
+    const parametresizFonksiyon = () => {
+        alert('Parametresiz fonksiyon tetiklendi');
+    };
+    
+    return (
+        <Container className='d-flex gap-3'>
+            <Button variant='danger' onClick={parametresizFonksiyon}>
+                Parametresiz
+            </Button>
+            <Button variant='warning'>
+                Parametreli
+            </Button>
+        </Container>
+    )
 }
 
-export default Events
+export default Events;

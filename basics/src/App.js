@@ -21,6 +21,7 @@ import ModernBootstrap from './components/09-bootstrap/02-Modern';
 import "./assets/scss/style.scss";
 import ReactIcons from './components/10-icons/01-ReactIcons';
 import Events from './components/11-events/events';
+import ProductShop from './components/12-productShop/product-shop';
 
 const profileCardData = {
     name: "Emir",
@@ -74,10 +75,10 @@ export default function App() {
             <br />
             <ImageGallery/>  <ProfileCard name="Michael Bayram" location="Chicago,Illinois" />
             <ProfileCard {...profileCardData}/>
-            <ClassicsBootstrap/><ModernBootstrap/>       <ReactIcons/>*/}
+            <ClassicsBootstrap/><ModernBootstrap/>       <ReactIcons/>
+            <Events/>*/}
 
-
-            <Events/>
+<ProductShop/>
 
             
         </>
