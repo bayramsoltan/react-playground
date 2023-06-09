@@ -23,6 +23,8 @@ import ReactIcons from './components/10-icons/01-ReactIcons';
 import Events from './components/11-events/events';
 import ProductShop from './components/12-productShop/product-shop';
 
+import State from './components/13-useState/State';
+
 const profileCardData = {
     name: "Emir",
     location: "New York",
@@ -76,9 +78,11 @@ export default function App() {
             <ImageGallery/>  <ProfileCard name="Michael Bayram" location="Chicago,Illinois" />
             <ProfileCard {...profileCardData}/>
             <ClassicsBootstrap/><ModernBootstrap/>       <ReactIcons/>
-            <Events/>*/}
+            <Events/>
+<ProductShop/>*/}
 
-<ProductShop/>
+<State/>
+
 
             
         </>
