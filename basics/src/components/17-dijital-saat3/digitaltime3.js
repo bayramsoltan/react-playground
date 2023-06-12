@@ -47,13 +47,34 @@ const Digitaltime3 = (props) => {
 
   return (
     <div style = {clockStyle} className='dijital-time-app2'>
-        <div className='time'>{hour}:{minute}:{second}</div>
-        <div>
-            <div className='date'>{dateStr}</div>
-            <div className='day'>{dayStr} {message}</div>
-        </div>
+        <div className='time'>
+                {hour}
+                <span style={{ opacity: minute % 2 === 0 ? 1 : 0 }}>:</span>
+                {minute}
+                <span style={{ opacity: second % 2 === 0 ? 1 : 0 }}>:</span>
+                {second}
+            </div>
+            <div>
+                <div className='date'>{dateStr}</div>
+                <div className='day'>{dayStr} {message}</div>
+            </div>
     </div>
   )
+
+/* 
+return (
+        <div style={saatStili} className='dijital-saat-uygulamasi3'>
+            <div className='time'>
+                {hour}
+                <span style={{ opacity: second % 2 === 0 ? 1 : 0 }}>:</span>
+                {minute}
+            </div>
+            <div>
+                <div className='date'>{dateStr}</div>
+                <div className='day'>{dayStr} {message}</div>
+            </div>
+        </div>
+    ); */
 }
 
 export default Digitaltime3
