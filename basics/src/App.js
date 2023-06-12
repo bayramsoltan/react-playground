@@ -24,6 +24,8 @@ import Events from './components/11-events/events';
 import ProductShop from './components/12-productShop/product-shop';
 
 import State from './components/13-useState/State';
+import Counter1 from './components/14-counter/Counter';
+import Birthday from './components/15-birthday/Birthday';
 
 const profileCardData = {
     name: "Emir",
@@ -81,9 +83,12 @@ export default function App() {
             <Events/>
 <ProductShop/>*/}
 
-<State/>
+{/* <State/> */}
+{/* 
+<Counter1>
+</Counter1> */}
 
-
+<Birthday/>
             
         </>
 

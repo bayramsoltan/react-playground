@@ -1,20 +1,37 @@
 // import React, { useState } from 'react'
-import React from 'react'
-import { Button, ButtonGroup, Container } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Button, ButtonGroup, Container } from 'react-bootstrap';
 
 const State = () => {
+    const [mode, setMode] = useState("light");
 
-    const [mode,setMode] = React.useState();
+    let classNames = "bg-dark text-light p-5";
 
-  return (
-    <Container>
-        <h1>Dark-Light Mode</h1>
-        <ButtonGroup>
-            <Button variant='dark'>Dark Mode</Button>
-            <Button variant='light'>Light Mode</Button>
-        </ButtonGroup>
-    </Container>
-  )
-}
+    if (mode === "light") {
+        classNames = "bg-light text-dark p-5"
+    }
 
-export default State
+    // setMode("dark"); =>   mode = "dark"
+
+    return (
+        <Container className={classNames} style={{ height: 500 }}>
+            <h1>Dark/Light Mode</h1>
+            <ButtonGroup>
+                <Button
+                    variant='dark'
+                    onClick={() => setMode("dark")}
+                >
+                    Dark Mode
+                </Button>
+                <Button 
+                variant='light'
+                onClick={() => setMode("light")}
+                >
+                    Light Mode
+                </Button>
+            </ButtonGroup>
+        </Container>
+    )
+};
+
+export default State;
