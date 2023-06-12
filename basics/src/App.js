@@ -30,6 +30,7 @@ import UseEffect from './components/16-useEffect/useeffect';
 import { Button } from 'react-bootstrap';
 import Digitaltime3 from './components/17-dijital-saat3/digitaltime3';
 import FilterList  from './components/18-filter-list/FilterList';
+import UseRef from './components/19-useRef/useref';
 
 const profileCardData = {
     name: "Emir",
@@ -97,9 +98,9 @@ export default function App() {
 {/* <Button onClick={()=>setShow(prev => !prev)}>
     use Effect hook'unu goster
 </Button>
-{ show && <UseEffect/>}<Digitaltime3/> */}
+{ show && <UseEffect/>}<Digitaltime3/> <FilterList/>*/}
             
-            <FilterList/>
+            <UseRef/>
         </>
 
     )
