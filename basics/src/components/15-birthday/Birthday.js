@@ -5,7 +5,6 @@ import Person from './person/person'
 
 const Birthday = () => {
     const [people, setPeople] = useState(peopleData)
-    console.log(people);
 
     const deletePerson = (id) =>{
       const arr = people.filter((person)=>person.id !== id);

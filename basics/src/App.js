@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 /* import Apples, { Bananas1, Orange } from './components/1-my-house';
 import Jsx1 from './components/2-jsx/01-jsx';
 import Jsx2 from './components/2-jsx/02-jsx';
@@ -26,6 +26,9 @@ import ProductShop from './components/12-productShop/product-shop';
 import State from './components/13-useState/State';
 import Counter1 from './components/14-counter/Counter';
 import Birthday from './components/15-birthday/Birthday';
+import UseEffect from './components/16-useEffect/useeffect';
+import { Button } from 'react-bootstrap';
+import Digitaltime3 from './components/17-dijital-saat3/digitaltime3';
 
 const profileCardData = {
     name: "Emir",
@@ -39,6 +42,9 @@ const profileCardData = {
 };
 //import etmeyi unutmu bu klasor tum companentleri uzerinde bir html sayfasi gibi
 export default function App() {
+    const [show,setShow]= useState(true);
+
+
     return (
         <>
             {/* <Apples />
@@ -86,10 +92,12 @@ export default function App() {
 {/* <State/> */}
 {/* 
 <Counter1>
-</Counter1> */}
-
-<Birthday/>
-            
+</Counter1> <Birthday/>*/}
+{/* <Button onClick={()=>setShow(prev => !prev)}>
+    use Effect hook'unu goster
+</Button>
+{ show && <UseEffect/>} */}
+            <Digitaltime3/>
         </>
 
     )
