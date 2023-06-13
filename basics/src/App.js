@@ -31,6 +31,8 @@ import { Button } from 'react-bootstrap';
 import Digitaltime3 from './components/17-dijital-saat3/digitaltime3';
 import FilterList  from './components/18-filter-list/FilterList';
 import UseRef from './components/19-useRef/useref';
+import ClassTurundeComponentler from './components/20-componentstype/1-class';
+import FunctionComponet from './components/20-componentstype/2-function';
 
 const profileCardData = {
     name: "Emir",
@@ -101,6 +103,11 @@ export default function App() {
 { show && <UseEffect/>}<Digitaltime3/> <FilterList/>*/}
             
             <UseRef/>
+            <br />
+            <ClassTurundeComponentler/>
+
+            <br />
+            {/* <FunctionComponet/> */}
         </>
 
     )

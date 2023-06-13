@@ -9,7 +9,6 @@ const UseRef = () => {
 
 
     const handleFocus = () => {
-        console.log(emailRef.current.value);
         emailRef.current.focus();
         buttonRef.current.style.backgroundColor ="red";
     }
