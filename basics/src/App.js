@@ -33,6 +33,7 @@ import FilterList  from './components/18-filter-list/FilterList';
 import UseRef from './components/19-useRef/useref';
 import ClassTurundeComponentler from './components/20-componentstype/1-class';
 import FunctionComponet from './components/20-componentstype/2-function';
+import Fetch from './components/21-Fetch/01-fetch';
 
 const profileCardData = {
     name: "Emir",
@@ -101,13 +102,15 @@ export default function App() {
     use Effect hook'unu goster
 </Button>
 { show && <UseEffect/>}<Digitaltime3/> <FilterList/>*/}
-            
+{/*             
             <UseRef/>
             <br />
             <ClassTurundeComponentler/>
 
-            <br />
+            <br /> */}
             {/* <FunctionComponet/> */}
+
+            <Fetch/>
         </>
 
     )
