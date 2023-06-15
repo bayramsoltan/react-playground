@@ -34,6 +34,7 @@ import UseRef from './components/19-useRef/useref';
 import ClassTurundeComponentler from './components/20-componentstype/1-class';
 import FunctionComponet from './components/20-componentstype/2-function';
 import Fetch from './components/21-Fetch/01-fetch';
+import Fetch2 from './components/21-Fetch/02-fetch';
 
 const profileCardData = {
     name: "Emir",
@@ -110,7 +111,7 @@ export default function App() {
             <br /> */}
             {/* <FunctionComponet/> */}
 
-            <Fetch/>
+            <Fetch2/>
         </>
 
     )
