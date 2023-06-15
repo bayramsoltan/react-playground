@@ -35,6 +35,7 @@ import ClassTurundeComponentler from './components/20-componentstype/1-class';
 import FunctionComponet from './components/20-componentstype/2-function';
 import Fetch from './components/21-Fetch/01-fetch';
 import Fetch2 from './components/21-Fetch/02-fetch';
+import Countries from './components/22-axios/countries';
 
 const profileCardData = {
     name: "Emir",
@@ -112,6 +113,8 @@ export default function App() {
             {/* <FunctionComponet/> */}
 
             <Fetch2/>
+            <br />
+            <Countries/>
         </>
 
     )

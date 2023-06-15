@@ -1,75 +1,55 @@
-import { useEffect, useState } from 'react'
-import { Container, ListGroup } from 'react-bootstrap';
-
-const Fetch = () => {
+import React, { useEffect, useState } from 'react';
+import { Button, Container, Row } from 'react-bootstrap';
+import UserCard from './02-user-card';
+const Fetch2 = () => {
     const [users, setUsers] = useState([]);
+    const [flag, setFlag] = useState(false);
 
-    const getMyUserData = async () => {
-        // fetch('https://jsonplaceholder.typicode.com/users')
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         users = data
-        //         console.log(data);
-        //     })
-        //     .catch(error => console.log(error));
+    // TODO: API'yi env'de sakla​
 
-        const response = await fetch('https://jsonplaceholder.typicode.com/users');
-        const data = await response.json();
-        setUsers(data);
+    const updateUser = async (userId, payload) => {
+        await fetch(`https://648a1ac75fa58521cab0d225.mockapi.io/api/v1/users/${userId}`, {
+            method: 'PUT',
+            headers: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify(payload)
+        })
+        setFlag(prevVal => !prevVal);
     };
 
-    const myObject = {
-        "id": 1,
-        "name": "Leanne Graham",
-        "username": "Bret",
-        "email": "Sincere@april.biz",
-        "address": {
-            "street": "Kulas Light",
-            "suite": "Apt. 556",
-            "city": "Gwenborough",
-            "zipcode": "92998-3874",
-            "geo": {
-                "lat": "-37.3159",
-                "lng": "81.1496"
-            }
-        },
-        "phone": "1-770-736-8031 x56442",
-        "website": "hildegard.org",
-        "company": {
-            "name": "Romaguera-Crona",
-            "catchPhrase": "Multi-layered client-server neural-net",
-            "bs": "harness real-time e-markets"
-        }
-    }
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(data => {
-                setUsers(data);
-                console.log(data);
-            })
-            .catch(error => console.log(error));
-    }, [])
+    const userInfo = {
+        avatar: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1068.jpg",
+        country: "British Indian Ocean Territory (Chagos Archipelago)",
+        email: "allangislason@gmail.com",
+        firstName: "Alan",
+        id: "10",
+        lastName: "Wake"
+    };
 
-    console.log(Object.keys(users));
+    // load user data
+    const loadUserData = async () => {
+        await fetch('https://648a1ac75fa58521cab0d225.mockapi.io/api/v1/users')
+            .then(response => response.json())
+            .then(data => setUsers(data))
+            .catch(error => console.log(error.message));
+    }
+
+    useEffect(() => {
+        loadUserData();
+    }, [flag]);
 
     return (
         <Container>
-            <h2>Fetch</h2>
-            <ListGroup>
+            <Row className='gap-1 mb-3'>
                 {
-                    users.length > 0 && users.map((user, index) => {
-                        return (
-                            <ListGroup.Item key={index}>
-                                {user.name}
-                            </ListGroup.Item>
-                        )
-                    })
+                    users?.map((user) => (<UserCard key={user.id} {...user} />))
                 }
-            </ListGroup>
-            <h2>HELLO</h2>
+            </Row>
+            <Button onClick={() => updateUser(10, userInfo)}>
+                UPDATE USER
+            </Button>
         </Container>
     )
 }
-
-export default Fetch;
+export default Fetch2;
