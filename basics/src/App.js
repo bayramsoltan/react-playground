@@ -37,6 +37,8 @@ import Fetch from './components/21-Fetch/01-fetch';
 import Fetch2 from './components/21-Fetch/02-fetch';
 import Countries from './components/22-axios/countries';
 import ParentComponent from './components/23-lifting-state-up/01-parentComponent';
+import Form1 from './components/24-form/01-form';
+import Form2 from './components/24-form/02-form';
 
 const profileCardData = {
     name: "Emir",
@@ -120,6 +122,12 @@ export default function App() {
 
 
             <ParentComponent/>
+
+            <br />
+            <Form1/>
+
+            <br />
+            <Form2/>
         </>
 
     )

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Container } from "react-bootstrap";
-import ChildComponent from './02-child-component';
+import ChildComponent from './02-childComponent';
 
 const ParentComponent = () => {
     const [counter, setCounter] = useState(0);
