@@ -36,6 +36,7 @@ import FunctionComponet from './components/20-componentstype/2-function';
 import Fetch from './components/21-Fetch/01-fetch';
 import Fetch2 from './components/21-Fetch/02-fetch';
 import Countries from './components/22-axios/countries';
+import ParentComponent from './components/23-lifting-state-up/01-parentComponent';
 
 const profileCardData = {
     name: "Emir",
@@ -112,9 +113,13 @@ export default function App() {
             <br /> */}
             {/* <FunctionComponet/> */}
 
-            <Fetch2/>
+            {/* <Fetch2/>
             <br />
-            <Countries/>
+            <Countries/> */}
+
+
+
+            <ParentComponent/>
         </>
 
     )
