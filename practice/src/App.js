@@ -6,6 +6,7 @@ import Header from './c10/Header'
 import Alisveris from './hw/Alisveris'
 import Sairler from './c12/Sairler'
 import Product from './c17/product'
+import Countries from './hw/country/countries'
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       readOnly
     /> */}
     {/* <Sairler/> */}
-    <Product/>
+    {/* <Product/> */}
+    <Countries/>
     </div>
   )
 }
