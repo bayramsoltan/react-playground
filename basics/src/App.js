@@ -39,6 +39,7 @@ import Countries from './components/22-axios/countries';
 import ParentComponent from './components/23-lifting-state-up/01-parentComponent';
 import Form1 from './components/24-form/01-form';
 import Form2 from './components/24-form/02-form';
+import Form4 from './components/24-form/04-form';
 
 const profileCardData = {
     name: "Emir",
@@ -128,6 +129,10 @@ export default function App() {
 
             <br />
             <Form2/>
+
+            <br />
+
+            <Form4/>
         </>
 
     )
