@@ -7,6 +7,7 @@ import Alisveris from './hw/Alisveris'
 import Sairler from './c12/Sairler'
 import Product from './c17/product'
 import Countries from './hw/country/countries'
+import Home from './c18/Home'
 
 const App = () => {
   return (
@@ -20,7 +21,9 @@ const App = () => {
     /> */}
     {/* <Sairler/> */}
     {/* <Product/> */}
-    <Countries/>
+    {/* <Countries/> */}
+
+    <Home/>
     </div>
   )
 }
