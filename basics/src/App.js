@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-/* import Apples, { Bananas1, Orange } from './components/1-my-house';
+import Apples, { Bananas1, Orange } from './components/1-my-house';
 import Jsx1 from './components/2-jsx/01-jsx';
 import Jsx2 from './components/2-jsx/02-jsx';
 import Jsx3 from './components/2-jsx/03-jsx';
@@ -13,10 +13,10 @@ import Digitaltime1 from './components/04-dijital-saat1/digitaltime';
 import Greetings from './components/05-props/01-greetings';
 import Products from './components/05-props/05-products';
 import Digitaltime2 from './components/06-dijital-saat2/digitaltime2';
-import Image from './components/07-images/01-image'; */
-// import ImageGallery from './components/07-images/02-image-gallery';
-// import ProfileCard from './components/08-card-profile/ProfileCard';
-// import ClassicsBootstrap from './components/09-bootstrap/01-Classic';
+import Image from './components/07-images/01-image';
+import ImageGallery from './components/07-images/02-image-gallery';
+import ProfileCard from './components/08-card-profile/ProfileCard';
+import ClassicsBootstrap from './components/09-bootstrap/01-Classic';
 import ModernBootstrap from './components/09-bootstrap/02-Modern';
 import "./assets/scss/style.scss";
 import ReactIcons from './components/10-icons/01-ReactIcons';
