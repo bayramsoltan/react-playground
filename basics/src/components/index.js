@@ -11,3 +11,9 @@ import InternalStyling from './03-styles/02-internal-styling';
 import ExternalStyling from './03-styles/03-external-styling';
 import ExternalModuleStyling from './03-styles/04-external-module-styling';
 import SassScss from './03-styles/05-sass-scss';
+
+
+//Digital Saat uygulamasi
+import Digitaltime1 from './components/04-dijital-saat1/digitaltime';
+
+import Greetings from './components/05-props/01-greetings';
