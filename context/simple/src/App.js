@@ -1,4 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { settings } from './constants/constants';
+import CurrencyContext from './store/store';
+import Exchange from './components/Exchange';
 
 const App = () => {
     const [currencies, setCurrencies] = useState();
@@ -8,13 +11,22 @@ const App = () => {
             const response = await
             fetch(`${settings.API_URL}/latest?
             from=${settings.currency.default}`)
-        }
-        catch (error){
+            .then(response => response.json())
+            .then((data)=>setCurrencies(data.rates))
+        }catch (error){
             console.log(error)
         }
     }
+
+    useEffect(()=>{
+        loadData();
+    },[])
   return (
-    <div>App</div>
+    <CurrencyContext.Provider value={{currencies}}>
+        <div>
+            <Exchange/>
+        </div>
+    </CurrencyContext.Provider>
   )
 }
 
