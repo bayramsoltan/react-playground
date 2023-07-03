@@ -27,7 +27,7 @@ const AppRouter = () => {
                     <Route path="bananas1" element={<Bananas1 />} />
                     <Route path="orange" element={<Orange />} />
                 </Route>
-​
+
                 <Route path="/jsx">
                     <Route index element={<Jsx1 />} />
                     <Route path="1" element={<Jsx1 />} />
