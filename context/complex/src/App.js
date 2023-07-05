@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import AppRouter from './router/router'
 
 const App = () => {
+
+    const [counterState,dispatchCounter] = useReducer(counterReducer, counterInitialState);
+
   return (
-    <div>App</div>
+    <>
+    <StoreContext.Provider value={{counterState,dispatchCounter}}>
+        <AppRouter />
+    </StoreContext.Provider>
+    </>
   )
 }
 

@@ -3,12 +3,12 @@ import TopBar from './TopBar'
 import Content from './Content'
 
 const Exchange = () => {
-  return (
-    <div>
-        <TopBar/>
-        <Content/>
-    </div>
-  )
+    return (
+        <div>
+            <TopBar />
+            <Content />
+        </div>
+    )
 }
 
 export default Exchange

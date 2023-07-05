@@ -1,6 +1,7 @@
-//createContext fonksiyonunu react'tan import ediyoruz
+// createContext fonksiyonunu react'tan import ediyoruz. 
 import { createContext } from "react";
-//bos bir merkezi state
-const CurrencyContext = createContext;
+
+// createContext fonksiyonu ile bir context oluşturuyoruz. Bos bir merkezi state.Istedigimiz ismi verebiliriz.
+const CurrencyContext = createContext();
 
 export default CurrencyContext;
