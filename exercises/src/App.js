@@ -1,3 +1,4 @@
+import Image from "./components/09-image/Image";
 import HelloWorld from "./components/1-hello-world/HelloWorld";
 import JSX1 from "./components/3-JSX/JSX1";
 import JSX2 from "./components/3-JSX/JSX2";
@@ -30,8 +31,9 @@ const App = () => {
             <Style4/>
   <Clock1/>
   <Greetings/>
-  <Products/>*/}
-      <Clock2 textColor="crimson" bgColor="cornflowerblue" />
+  <Products/>  
+  <Clock2 textColor="crimson" bgColor="cornflowerblue" />*/}
+    <Image/>
     </div>
   );
 };
