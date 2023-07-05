@@ -3,6 +3,13 @@ import React, { useState } from 'react'
 const Content = () => {
   const [amount, setAmount] = useState(0);
   const handleChange = (e)=>{
+    const {name,value} = e.target;
+    if(name==="amount"){
+        setAmount(value);
+    }
+    if(name ==="currency"){
+        setCurrency(value);
+    }
 
   };
   return (
