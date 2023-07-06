@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700;800&display=swap');
+
+.profile-card{
+        font-family: Dosis;
+        border: 2px solid gray;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+
+        .header{
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left bottom;
+            border-radius: 1rem 1rem 0 0;
+            -webkit-border-radius: 1rem 1rem 0 0;
+            -moz-border-radius: 1rem 1rem 0 0;
+            -ms-border-radius: 1rem 1rem 0 0;
+            -o-border-radius: 1rem 1rem 0 0;
+            position: relative;
+
+            &::after{
+                content: "";
+                background-color: rgba(255, 0, 0, 0.39);
+                position: absolute;
+                top: 0; left: 0; bottom: 0; right: 0;
+                border-radius: 1rem 1rem 0 0;
+            }
+        }
+        .content{
+            text-align: center;
+            color: rgb(68, 59, 59);
+            
+            .avatar{
+                width: 150px;
+                height: 150px;
+                border-radius: 100px;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                -o-border-radius: 100px;
+                background-repeat: no-repeat;
+                background-size: 200%;
+                background-position: left bottom;
+                margin: 0 auto;
+                transform: translateY(-50%);
+                margin-bottom: -75px;
+                border: 8px solid rgba(245, 222, 179, 0.667);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+}
+
+                h2{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                h4{
+                    margin: 0;
+                    font-size: 1.3rem;
+                    color: rgba(53, 100, 84, 0.555);
+                    font-weight: 500;
+                }
+
+                .stats{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 2rem 0px;
+                }
+                h3{
+                    font-size: 3rem;
+                    font-weight: 400;
+                    margin: 0;
+                }
+                h6{
+                    font-size: 1rem;
+                    color: rgba(51, 71, 64, 0.288);
+                }
+        }
+    }
