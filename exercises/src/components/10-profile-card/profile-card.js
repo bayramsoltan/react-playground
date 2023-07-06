@@ -14,7 +14,7 @@ const ProfileCard = (props) => {
         <div className='header' style={{profileBg}}></div>
         <div className='content'>
             <div className="avatar" style={profileBg}></div>
-
+            
             <h2>{name}</h2>
             <h4>{location}</h4>
             <div className='stats'>
