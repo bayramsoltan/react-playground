@@ -18,6 +18,8 @@ import Clock1 from "./components/5-clock1/Clock1";
 import Greetings from "./components/6-props-1/Greetings";
 import Products from "./components/7-props-2/Products";
 import Clock2 from "./components/8-clock2/Clock2";
+import Icon from "./components/12-icons/icon";
+import Events from "./components/13-events/events";
 const App = () => {
   //compononets names should start with capital letter
   return (
@@ -39,9 +41,12 @@ const App = () => {
   <Clock2 textColor="crimson" bgColor="cornflowerblue" />
   <Image/> <Gallery/>
   <ProfileCard avatar ="profile.jpg" name="Bayram Soltanov" location="Turkey, Istanbul" followers="1M" following="67" shot="18"/>
-  <BootstrapStatic/>*/}
+  <BootstrapStatic/>
+  <BootstrapDynamic/>
+  <Icon/>*/}
    
-   <BootstrapDynamic/>
+   
+   <Events/>
     </div>
   );
 };
