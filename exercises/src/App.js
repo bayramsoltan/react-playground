@@ -2,6 +2,8 @@ import Image from "./components/09-image/Image";
 import Gallery from "./components/09-image/gallery";
 import HelloWorld from "./components/1-hello-world/HelloWorld";
 import ProfileCard from "./components/10-profile-card/profile-card";
+import BootstrapDynamic from "./components/11-bootstrap/bootstrap-dynamic";
+import BootstrapStatic from "./components/11-bootstrap/bootstrap-static";
 import JSX1 from "./components/3-JSX/JSX1";
 import JSX2 from "./components/3-JSX/JSX2";
 import JSX3 from "./components/3-JSX/JSX3";
@@ -35,8 +37,11 @@ const App = () => {
   <Greetings/>
   <Products/>  
   <Clock2 textColor="crimson" bgColor="cornflowerblue" />
-  <Image/> <Gallery/>*/}
-   <ProfileCard avatar ="profile.jpg" name="Bayram Soltanov" location="Turkey, Istanbul" followers="1M" following="67" shot="18"/>
+  <Image/> <Gallery/>
+  <ProfileCard avatar ="profile.jpg" name="Bayram Soltanov" location="Turkey, Istanbul" followers="1M" following="67" shot="18"/>
+  <BootstrapStatic/>*/}
+   
+   <BootstrapDynamic/>
     </div>
   );
 };
