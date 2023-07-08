@@ -13,7 +13,7 @@ const Events = () => {
         {/* parametresiz */}
         <div onClick={sayHello1}>XAXA</div>
         {/* parametreli kullanim icin arrow function yazariz*/}
-        <div onClick={sayHello2("Ali")}>KAXA</div>
+        <div onClick={() => sayHello2("Ali")}>KAXA</div>
     </div>
   )
 }

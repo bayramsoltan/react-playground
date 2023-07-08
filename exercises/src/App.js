@@ -20,6 +20,7 @@ import Products from "./components/7-props-2/Products";
 import Clock2 from "./components/8-clock2/Clock2";
 import Icon from "./components/12-icons/icon";
 import Events from "./components/13-events/events";
+import Shop from "./components/14-products/shop";
 const App = () => {
   //compononets names should start with capital letter
   return (
@@ -43,10 +44,11 @@ const App = () => {
   <ProfileCard avatar ="profile.jpg" name="Bayram Soltanov" location="Turkey, Istanbul" followers="1M" following="67" shot="18"/>
   <BootstrapStatic/>
   <BootstrapDynamic/>
-  <Icon/>*/}
+  <Icon/>
+  <Events/>*/}
    
    
-   <Events/>
+   <Shop/>
     </div>
   );
 };
