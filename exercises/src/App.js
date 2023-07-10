@@ -21,6 +21,12 @@ import Clock2 from "./components/8-clock2/Clock2";
 import Icon from "./components/12-icons/icon";
 import Events from "./components/13-events/events";
 import Shop from "./components/14-products/shop";
+import JSX7 from "./components/3-JSX/JSX7";
+import Stateless from "./components/15-useState/stateless";
+import State from "./components/15-useState/state";
+import Counter from "./components/16-counter/counter";
+
+
 const App = () => {
   //compononets names should start with capital letter
   return (
@@ -45,10 +51,17 @@ const App = () => {
   <BootstrapStatic/>
   <BootstrapDynamic/>
   <Icon/>
-  <Events/>*/}
+  <Events/>
+  <Shop/>
+  <JSX7/>
+  <Stateless/>
+  <State/>*/}
+
+  <Counter/>
    
    
-   <Shop/>
+   
+   
     </div>
   );
 };
