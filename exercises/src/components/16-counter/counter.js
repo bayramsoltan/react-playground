@@ -22,7 +22,7 @@ const Counter = () => {
       <Button variant="warning" onClick={() => handleClick(counter - 1)}>
         <AiOutlineMinusCircle />
       </Button>
-      <Button variant="danger" onClick={()=>handleClick(0)}>
+      <Button variant="danger" onClick={()=>handleClick(0)} disabled={!counter}>
         <GrPowerReset />
       </Button>
     </ButtonGroup>

@@ -25,6 +25,7 @@ import JSX7 from "./components/3-JSX/JSX7";
 import Stateless from "./components/15-useState/stateless";
 import State from "./components/15-useState/state";
 import Counter from "./components/16-counter/counter";
+import Birthday from "./components/17-birthday/birthday";
 
 
 const App = () => {
@@ -55,9 +56,13 @@ const App = () => {
   <Shop/>
   <JSX7/>
   <Stateless/>
-  <State/>*/}
+  <State/> 
+  <Counter/>*/}
 
-  <Counter/>
+
+  <Birthday/>
+
+ 
    
    
    
