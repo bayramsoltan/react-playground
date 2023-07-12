@@ -26,6 +26,9 @@ import Stateless from "./components/15-useState/stateless";
 import State from "./components/15-useState/state";
 import Counter from "./components/16-counter/counter";
 import Birthday from "./components/17-birthday/birthday";
+import ProgressBarExample from "./components/17-progress-bar/progressbar";
+import UseEffect from "./components/18-useEffect/useeffect";
+import Clock3 from "./components/19-clock3/Clock3";
 
 
 const App = () => {
@@ -57,11 +60,16 @@ const App = () => {
   <JSX7/>
   <Stateless/>
   <State/> 
-  <Counter/>*/}
-
-
+  <Counter/>
   <Birthday/>
+  <ProgressBarExample/>
+  <UseEffect/>
 
+*/}
+
+<Clock3/>
+
+  
  
    
    
