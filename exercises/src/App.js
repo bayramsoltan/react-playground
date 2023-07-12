@@ -27,8 +27,10 @@ import State from "./components/15-useState/state";
 import Counter from "./components/16-counter/counter";
 import Birthday from "./components/17-birthday/birthday";
 import ProgressBarExample from "./components/17-progress-bar/progressbar";
-import UseEffect from "./components/18-useEffect/useeffect";
+import UseEffect1 from "./components/18-useEffect/useeffect1";
 import Clock3 from "./components/19-clock3/Clock3";
+import UseEffect2 from "./components/18-useEffect/useEffect2";
+import CountryFilter from "./components/20-country-filter/country-filter";
 
 
 const App = () => {
@@ -63,14 +65,19 @@ const App = () => {
   <Counter/>
   <Birthday/>
   <ProgressBarExample/>
-  <UseEffect/>
-
+  <UseEffect1/>
+<Clock3/> 
+<UseEffect2/>
 */}
 
-<Clock3/>
+
+
+<CountryFilter/>
+
+
 
   
- 
+
    
    
    

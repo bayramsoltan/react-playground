@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap';
 
-const UseEffect = ({id}) => {
+const UseEffect1 = ({id}) => {
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
 
@@ -44,4 +44,4 @@ useEffect(()=>{
   )
 }
 
-export default UseEffect
+export default UseEffect1
