@@ -33,6 +33,7 @@ import UseEffect2 from "./components/18-useEffect/useEffect2";
 import CountryFilter from "./components/20-country-filter/country-filter";
 import UseRef from "./components/21-useRef/useref";
 import Scroll from "./components/21-useRef/scroll";
+import ClassComp from "./components/22-class-type/class-comp";
 
 
 const App = () => {
@@ -78,8 +79,10 @@ const App = () => {
 
 
    
-   
-    </div>
+   <ClassComp/>
+
+   </div>
+
   );
 };
 
