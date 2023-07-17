@@ -35,6 +35,7 @@ import UseRef from "./components/21-useRef/useref";
 import Scroll from "./components/21-useRef/scroll";
 import ClassComp from "./components/22-class-type/class-comp";
 import UserCards from "./components/23-fetch-users/usercards";
+import Countries from "./components/24-axios/countries";
 
 
 const App = () => {
@@ -76,11 +77,12 @@ const App = () => {
 <UseRef/>
 <Scroll/>
 <ClassComp/>
+<UserCards/>
 */}
 
+<Countries/>
 
-
-   <UserCards/>
+   
    
 
    </div>
