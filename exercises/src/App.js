@@ -43,11 +43,26 @@ import Form3 from "./components/26-forms/form3";
 import Form4 from "./components/26-forms/form4";
 import Form5 from "./components/26-forms/form5";
 import Form6 from "./components/26-forms/form6";
+import { BrowserRouter } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
+import Header from "./components/00-home/header/header";
+import Menu from "./components/00-home/menu/menu";
 
 const App = () => {
   //compononets names should start with capital letter
   return (
-    <div>
+    <BrowserRouter>
+    <Header/>
+    <Container fluid>
+      <Row>
+        <Col sm={2}>
+        <Menu/>
+        </Col>
+        <Col sm={10}>
+    Content
+        </Col>
+      </Row>
+    </Container>
       {/*   
       <HelloWorld/>
             <JSX1/>
@@ -92,12 +107,13 @@ const App = () => {
 <Form3/>
 <Form4/>
 <Form5/>
+<Form6/>
 */}
 
 
-<Form6/>
 
-    </div>
+
+    </BrowserRouter>
   );
 };
 
