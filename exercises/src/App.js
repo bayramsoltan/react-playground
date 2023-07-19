@@ -43,10 +43,11 @@ import Form3 from "./components/26-forms/form3";
 import Form4 from "./components/26-forms/form4";
 import Form5 from "./components/26-forms/form5";
 import Form6 from "./components/26-forms/form6";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import Header from "./components/00-home/header/header";
 import Menu from "./components/00-home/menu/menu";
+import HelloReact from "./components/2-hello-react/HelloReact";
 
 const App = () => {
   //compononets names should start with capital letter
@@ -59,17 +60,19 @@ const App = () => {
         <Menu/>
         </Col>
         <Col sm={10}>
-    Content
+    <Routes>
+      <Route path="/hello-world" element={<HelloWorld/>}/>
+      <Route path="/hello-react" element={<HelloReact/>}/>
+      <Route path="/jsx1" element={<JSX1/>}/>
+      <Route path="/jsx2" element={<JSX2/>}/>
+      <Route path="/jsx3" element={<JSX3/>}/>
+      <Route path="/jsx4" element={<JSX4/>}/>
+      <Route path="/jsx5" element={<JSX5/>}/>
+    </Routes>
         </Col>
       </Row>
     </Container>
       {/*   
-      <HelloWorld/>
-            <JSX1/>
-            <JSX2/> 
-            <JSX3/>
-            <JSX4/>
-            <JSX5/>
             <JSX6/>
             <Style1/>
             <Style2/>
