@@ -48,10 +48,32 @@ import { Col, Container, Row } from "react-bootstrap";
 import Header from "./components/00-home/header/header";
 import Menu from "./components/00-home/menu/menu";
 import HelloReact from "./components/2-hello-react/HelloReact";
+import StoreContext from "./store";
+import Exchange from "./components/27-context-api/exchange";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const App = () => {
   //compononets names should start with capital letter
+  const [counter, setCounter] = useState(10);
+  const [currencies, setcurrencies] = useState({});  
+
+  const loadData = async () => {
+  try {
+    const resp = await axios.get("https://api.frankfurter.app/latest?from=TRY");
+    setcurrencies(resp.data.rates);
+  } catch (error) {
+    console.log(error)
+  }
+   }
+
+   useEffect(()=>{
+    loadData();
+   },[])
+
+
   return (
+    <StoreContext.Provider value={{counter, setCounter, currencies}}>
     <BrowserRouter>
     <Header/>
     <Container fluid>
@@ -107,12 +129,14 @@ const App = () => {
       <Route path="/form4" element={<Form4/>}/>
       <Route path="/form5" element={<Form5/>}/>
       <Route path="/form6" element={<Form6/>}/>
+      <Route path="/exchange" element={<Exchange/>}/>
 
     </Routes>
         </Col>
       </Row>
     </Container>
     </BrowserRouter>
+    </StoreContext.Provider>
   );
 };
 

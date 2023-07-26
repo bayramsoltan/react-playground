@@ -55,6 +55,7 @@ const Menu = () => {
             <li><Link to="/form4">Form4</Link></li>
             <li><Link to="/form5">Form5</Link></li>
             <li><Link to="/form6">Form6</Link></li>
+            <li><Link to="/exchange">Context API</Link></li>
 
             
 
