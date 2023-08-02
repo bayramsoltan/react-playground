@@ -8,9 +8,12 @@ export const counterReducer = (state = counterInitialState, action) =>{
         // olusturulan yeni state return edildiginde mevcut state guncellenmis olur.
         return newState;
     }else if (action.type === COUNTER_DOWN){
-
+        const newState = {...state, counter: state.counter - 1 };
+        return newState;
     }
     else if(action.type === COUNTER_SET){
+        const newState = {...state, counter: action.payload};
+        return newState;
 
     }
 
