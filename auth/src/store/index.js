@@ -20,7 +20,7 @@ const [counterState, dispatchCounter] = useReducer(counterReducer, counterInitia
 const [authState, dispatchAuth] = useReducer(authReducer, authInitialState);
 
     return (
-        <StoreContext.Provider value={{}}>
+        <StoreContext.Provider value={{counterState,dispatchCounter,authState,dispatchAuth}}>
             {children}
         </StoreContext.Provider>
     )
