@@ -1,12 +1,18 @@
 import React from 'react'
+import { Button, ButtonGroup } from 'react-bootstrap'
+import { useStore } from '../store'
+import { counterDown, counterUp } from '../store/counter/couter-actions';
 
 const HomePage = () => {
+
+    const {counterState, dispatchCounter} = useStore();
+    console.log(counterState);
   return (
     <div>
     <ButtonGroup aria-label="Basic example">
-      <Button variant="warning">-</Button>
-      <Button variant="secondary" disabled>Middle</Button>
-      <Button variant="info">+</Button>
+      <Button variant="warning" onClick={()=>dispatchCounter(counterDown())}>-</Button>
+      <Button variant="secondary" disabled>{counterState.counter}</Button>
+      <Button variant="info" onClick={()=>dispatchCounter(counterUp())}>+</Button>
     </ButtonGroup>
     </div>
   )

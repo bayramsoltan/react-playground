@@ -1,6 +1,8 @@
-import { useContext, useReducer } from "react";
-import { createContext } from "react";
+import { useContext, useReducer, createContext} from "react";
+import { counterInitialState} from "./counter/counter-initial-state";
 import { counterReducer } from "./counter/counter-reducer";
+import { authReducer } from "./auth/auth-reducer";
+import { authInitialState } from "./auth/auth-initial-state";
 
 //bos bir merkezi state olusturuldu
 const StoreContext = createContext();
@@ -15,7 +17,7 @@ export const StoreProvider = ({children}) =>{
 //useReducer fonksiyonu ise geriye setter ve getter lari doner
 
 const [counterState, dispatchCounter] = useReducer(counterReducer, counterInitialState)
-
+const [authState, dispatchAuth] = useReducer(authReducer, authInitialState);
 
     return (
         <StoreContext.Provider value={{}}>
